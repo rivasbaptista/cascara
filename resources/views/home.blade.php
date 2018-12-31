@@ -1,23 +1,25 @@
 @extends('layouts.app')
-
+@section('title', 'Inicio')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<ul id="slide-out" class="sidenav sidenav-fixed blue-grey darken-4  grey-text ">
+      <li><a href="#!">Inicio</a></li>
+      <li><a href="#!">Asignados</a></li>
+      <li><a href="#!">Cerrados</a></li>
+      <li><a href="#!">Pendientes Por Cerrar</a></li>
+</ul>
 
-                    You are logged in!
-                </div>
-            </div>
+
+<div class="row">
+    <div class="col s12 m12 l12">
+        <div class="section">
+            <h6>Mi Dashboard</h6>
+            <p>hola bienvenidos a tu panel de administración</p>
         </div>
     </div>
 </div>
+    
+
+
+
 @endsection

@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js([
 	'resources/js/materialize.js',
+	'resources/js/extras.js',
 	'resources/js/app.js',
 	], 'public/js/app.js')
    .styles([
